@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="syntax.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet"> 
 </head>
@@ -14,36 +15,53 @@
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Matt Chapman</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
-                <div class="navbar-toggler-icon"></div>
+                <!-- <div class="navbar-toggler-icon"></div> -->
+                <span>
+                    <i class="fa fa-bars"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a href="index.html" class="nav-link active px-sm-0 px-md-2" aria-current="page">Home</a>
+                    </li> -->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                        <a href="#" class="nav-link px-sm-0 px-md-2">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link px-sm-0 px-md-2">Guides</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Guides</a>
+                    <!-- <li>
+                        <div class="bd-search" id="docsearch" data-bd-docs-version="5.2"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key">⌘</kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div>
+                    </li> -->
+                    <li class="nav-item d-none d-sm-block d-md-none">
+                        <button type="button" class="btn btn-warning navbar-btn">
+                            <a href="#" class="external text-decoration-none text-reset">Buy me a coffee?</a>
+                        </button>
                     </li>
-                </ul>
+                </ul>                
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
             </div>
-            <button type="button" class="btn btn-warning">
-                <a href="#" class="external text-decoration-none">Buy me a coffee?</a>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
-                    <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
-                  </svg> -->
+            <button type="button" class="btn btn-warning navbar-btn d-none d-md-block">
+                <a href="#" class="external text-decoration-none text-reset">Buy me a coffee?</a>
             </button>
         </div>
     </nav>
 
-    <div class="container px-5 mt-4">
+    <div class="container p-sm-5 px-sm-4 px-md-5 mt-sm-5 mt-1 px-3">
         <div class="row">
             <div class="col-sm-12">
                 <article>
                     <div class="technical_note">
+                        <ol class="breadcrumb rounded-3">
+                            <li class="breadcrumb-item"><a href="#">Guides</a></li>
+                            <li class="breadcrumb-item"><a href="#">Python</a></li>
+                            <li class="breadcrumb-item"><a href="#">pandas</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Filtering</li>
+                          </ol>
                         <header>
                             <!-- <h1 class="technical_note_title">Filter pandas Dataframes</h1> -->
                             <h1 class="bd-title mb-0">Filtering a pandas DataFrame</h1>
@@ -56,7 +74,10 @@
                             <h2 id="import-modules">Import modules</h2>
                             <p>Before we can begin, you need to import the modules. We can do this by using the <code>import</code> command.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</code></pre></div><h2 id="create-dataframe">Create Dataframe</h2>
+</code></pre></div>
+
+
+<h2 id="create-dataframe">Create Dataframe</h2>
 <div class="highlight">
     <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Jason&#39;</span><span class="p">,</span> <span class="s1">&#39;Molly&#39;</span><span class="p">,</span> <span class="s1">&#39;Tina&#39;</span><span class="p">,</span> <span class="s1">&#39;Jake&#39;</span><span class="p">,</span> <span class="s1">&#39;Amy&#39;</span><span class="p">],</span> 
         <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2012</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2014</span><span class="p">],</span> 
@@ -65,6 +86,23 @@
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cochice&#39;</span><span class="p">,</span> <span class="s1">&#39;Pima&#39;</span><span class="p">,</span> <span class="s1">&#39;Santa Cruz&#39;</span><span class="p">,</span> <span class="s1">&#39;Maricopa&#39;</span><span class="p">,</span> <span class="s1">&#39;Yuma&#39;</span><span class="p">])</span>
 <span class="n">df</span>
 </code></pre></div><div></div>
+
+                            <!-- Accordian -->
+                            <div class="accordion mt-4" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h6 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    🤔 What is a DataFrame?
+                                    </button>
+                                  </h6>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>A DataFrame is a 2-dimensional labeled data structure.</strong> You can think of it like a spreadsheet or SQL table, or a dict of Series objects.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
                             <h2 id="import-modules">Import modules</h2>
                             <p>Before we can begin, you need to import the modules. We can do this by using the <code>import</code> command.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -84,65 +122,64 @@
         </div>
     </div>
 
-    <div class="container px-5 mt-4">
-        <footer>
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
           <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <div class="col-lg-3 mb-3">
+              <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                <span class="fs-5">Matt Chapman</span>
+              </a>
+              <ul class="list-unstyled small">
+                <li class="mb-2">Designed and built while bored in a hospital waiting room.</a></li>
+                <!-- <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li> -->
               </ul>
             </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/">Home</a></li>
+                <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+                <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+                <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+                <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap">Swag Store</a></li>
               </ul>
             </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Guides</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
+                <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
+                <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
               </ul>
             </div>
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
-              </form>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/examples/">Examples repo</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Community</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+                <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+                <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+                <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+                <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+              </ul>
             </div>
           </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>© 2023 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
 
     <!-- JS scripts -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
