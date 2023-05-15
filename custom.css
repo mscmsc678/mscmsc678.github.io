@@ -31,6 +31,14 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 450px) {
+.display-4 {font-size: calc(1.275rem + 2.5vw);}
+}
+
+@media (max-width: 370px) {
+    .display-4 {font-size: calc(1.275rem + 1.8vw);}
+    }
+
 .image-bg {
     background-image: linear-gradient(-45deg, #48A4FF 50%, #ff5085 50%);
     /* background-size: cover; */
@@ -268,16 +276,16 @@ Navbar
 .navbar .navbar-brand, .navbar .navbar-brand:hover {
   color: #fff;
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 500;
   /* text-transform: uppercase; */
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .navbar-nav > li > a {
   color: #fff;
   /* text-transform: uppercase; */
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .navbar-toggler-icon { 
