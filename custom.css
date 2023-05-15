@@ -31,12 +31,46 @@ a {
     text-decoration: none;
 }
 
+.overflow-hidden {
+    max-height: 50vh;
+}
+
+@media (max-width: 1000px) {
+    .overflow-hidden {max-height: 50vh}
+}
+
+@media (max-width: 800px) {
+    .overflow-hidden {max-height: 43vh}
+}
+
+@media (max-width: 700px) {
+    .overflow-hidden {max-height: 39vh}
+}
+
+@media (max-width: 650px) {
+    .overflow-hidden {max-height: 35vh}
+}
+
+@media (max-width: 600px) {
+    .overflow-hidden {max-height: 30vh}
+}
+
+@media (max-width: 550px) {
+    .overflow-hidden {max-height: 27vh}
+}
+
+@media (max-width: 500px) {
+    .overflow-hidden {max-height: 23vh}
+}
+
 @media (max-width: 450px) {
 .display-4 {font-size: calc(1.275rem + 2.5vw);}
+.overflow-hidden {max-height: 17vh}
 }
 
 @media (max-width: 370px) {
     .display-4 {font-size: calc(1.275rem + 1.8vw);}
+    .overflow-hidden {max-height: 16vh}
     }
 
 .image-bg {
