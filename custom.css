@@ -52,26 +52,34 @@ a {
 }
 
 @media (max-width: 600px) {
-    .overflow-hidden {max-height: 30vh}
+    .overflow-hidden {max-height: 34vh}
 }
 
 @media (max-width: 550px) {
-    .overflow-hidden {max-height: 27vh}
+    .overflow-hidden {max-height: 33vh}
 }
 
 @media (max-width: 500px) {
-    .overflow-hidden {max-height: 23vh}
+    .overflow-hidden {max-height: 32vh}
 }
 
 @media (max-width: 450px) {
 .display-4 {font-size: calc(1.275rem + 2.5vw);}
-.overflow-hidden {max-height: 17vh}
+.overflow-hidden {max-height: 28vh}
+}
+
+@media (max-width: 400px) {
+    .overflow-hidden {max-height: 25vh}
 }
 
 @media (max-width: 370px) {
     .display-4 {font-size: calc(1.275rem + 1.8vw);}
-    .overflow-hidden {max-height: 16vh}
+    .overflow-hidden {max-height: 22vh;}
     }
+
+@media (max-width: 350px) {
+    .overflow-hidden {max-height: 18vh}
+}
 
 .image-bg {
     background-image: linear-gradient(-45deg, #48A4FF 50%, #ff5085 50%);
