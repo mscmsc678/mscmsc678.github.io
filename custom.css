@@ -21,6 +21,52 @@
     border: 0;
 }
 
+.h1-gradient {
+    background: linear-gradient(.25turn, #42047e, #07f49e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-bg {
+    background-image: linear-gradient(-45deg, #48A4FF 50%, #ff5085 50%);
+    /* background-size: cover; */
+    filter: blur(72px);
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 300px; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* z-index: 1; */
+    /* position: absolute;
+    z-index: 1; */
+}
+
+.hero-image {
+    /* filter: drop-shadow(1px 1px 3px rgb(0 0 0 / 0.4)); */
+    /* background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%); */
+    /* backdrop-filter: blur(72px); */
+    position: absolute;
+    left:0;
+    right:0;
+    top:110px;
+    bottom:0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 200px; */
+    /* height: 200px; */
+    /* position: relative; */
+    /* z-index: 2; */
+    /* position: absolute; */
+    /* z-index: 10;
+    /* background-color: blue; */
+}
+
+  
+
+  
+
+
 /* ---------------------------------------------------------
 /* Computer Modern font
 ---------------------------------------------------------*/
