@@ -25,11 +25,12 @@
     background: linear-gradient(.25turn, #42047e, #07f49e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-a {
     text-decoration: none;
 }
+
+/* a {
+    text-decoration: none;
+} */
 
 .overflow-hidden {
     max-height: 50vh;
@@ -69,17 +70,23 @@ a {
 }
 
 @media (max-width: 400px) {
-    .overflow-hidden {max-height: 25vh}
+    /* .overflow-hidden {max-height: 25vh} */
+    .overflow-hidden {display: none;}
 }
 
-@media (max-width: 370px) {
+.footer-brand {
+    font-weight: 500;
+    margin-left: 7px;
+}
+
+/* @media (max-width: 370px) {
     .display-4 {font-size: calc(1.275rem + 1.8vw);}
     .overflow-hidden {max-height: 22vh;}
     }
 
 @media (max-width: 350px) {
     .overflow-hidden {max-height: 18vh}
-}
+} */
 
 .image-bg {
     background-image: linear-gradient(-45deg, #48A4FF 50%, #ff5085 50%);
