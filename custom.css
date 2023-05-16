@@ -28,9 +28,9 @@
     text-decoration: none;
 }
 
-/* a {
+.no-decoration {
     text-decoration: none;
-} */
+}
 
 .overflow-hidden {
     max-height: 50vh;
