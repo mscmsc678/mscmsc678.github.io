@@ -79,6 +79,35 @@
     margin-left: 7px;
 }
 
+/* FILTERING SYSTEM */
+
+.filterDiv {
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: flex;
+  }
+
+
+/* CHECKBOX SELECTORS */
+
+/* [value="python"]:checked ~ .card[data-category="python"],
+[value="sql"]:checked ~ .card[data-category="sql"]
+{ 
+    display: block;
+    animation: fadeIn .25s;
+}
+
+[value="python"]:not(:checked) ~ .card[data-category="python"],
+[value="sql"]:not(:checked) ~ .card[data-category="sql"]
+{
+    display: none;
+    animation: fadeOut .25s;
+} */
+
+
 /* @media (max-width: 370px) {
     .display-4 {font-size: calc(1.275rem + 1.8vw);}
     .overflow-hidden {max-height: 22vh;}
