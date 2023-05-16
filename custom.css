@@ -32,6 +32,10 @@
     text-decoration: none;
 }
 
+.text-white {
+    color: white;
+}
+
 .overflow-hidden {
     max-height: 50vh;
 }
