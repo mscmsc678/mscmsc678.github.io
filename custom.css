@@ -95,6 +95,46 @@
   }
 
 
+/* CARDS */
+
+/* .text-body-secondary {
+    font-family: monospace;
+} */
+
+.card {
+    border-color:rgba(175, 175, 175, 0.3);
+}
+
+.card-title:hover {
+    background: linear-gradient(.25turn, #42047e, #07f49e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.card-footer {
+    border-color:rgba(175, 175, 175, 0.3);
+}
+
+.badge {
+    border-radius: 25px;
+    color: black;
+    font-weight: 200;
+}
+
+.badge-python {
+    background-color: #D5F9DE;
+}
+
+.badge-pandas {
+    background-color: #FFD6BA;
+}
+
+.badge-sql {
+    background-color: #BEB8EB;
+}
+
+
 /* CHECKBOX SELECTORS */
 
 /* [value="python"]:checked ~ .card[data-category="python"],
